@@ -51,7 +51,7 @@ func (container *Container) AddService(name string, service ServiceFactoryInterf
 	container.services[name] = service
 }
 
-// Container constructor, creates a new Container instance
+// Container constructor
 // if not needed then the delegate container should nil
 func NewContainer(services map[string]ServiceFactoryInterface, delegateContainer ContainerInterface) *Container {
 	return &Container{
