@@ -2,10 +2,6 @@
 // to be used for dependency injection in external packages.
 package di
 
-// Base service interface serves only has a representation.
-type ServiceInterface interface {
-}
-
 // Standard Container interface
 type ContainerInterface interface {
 	Get(service string) interface{}
